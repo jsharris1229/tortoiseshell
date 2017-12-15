@@ -13,7 +13,8 @@ body {
   background-color: white;
 }
 
-section {
+section,
+footer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -123,6 +124,10 @@ nav {
 }
 
 .imgblock img {
+  max-width: 4.5rem;
+}
+
+.imgblock img[alt^="Exam"] {
   max-width: 3.5rem;
 }
 
@@ -155,14 +160,68 @@ nav {
   margin: 0;
   width: 10rem;
   height: 1rem;
-  border: 1px solid yellow;
+  /* DEBUG border: 1px solid yellow; */
 }
 
 .infoblock p {
   margin-top: 1rem;
 }
+
+/* ***** Footer section
+ */
+.footercontainer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem;
+}
+
+.footercontainer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
 /* ***** Add blank space at the end.
  */
 .endspace {
   height: 6rem;
+}
+
+/* ***** Responsive design code
+    The default size is full browser size.
+    Next is tablet size, at 1024px wide
+    Final is phone size, at 480px wide.
+ */
+
+ /* Tablet size, max width 1024px
+  */
+
+@media only screen and (max-width: 1024px) {
+
+  .cbanner {
+    height: 22rem;
+  }
+
+  .sitecontainer {
+    width: 100%;
+  }
+
+  .topmenu {
+    margin-top: 0;
+  }
+  nav {
+    margin-right: 2rem;
+  }
+
+  .callout  {
+    padding: .75rem 4rem;
+    top: 5rem;
+    right: 2rem;
+    background-color: white;
+  }
+
+  .callout span {
+    font-size: 1.33rem;
+  }
+
 }
