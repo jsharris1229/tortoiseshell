@@ -29,14 +29,14 @@ section {
 }
 /*
 <section id="banner" class="cbanner">
-  <div class="topmenu">
-    <div class="sitecontainer">
+  <div class="sitecontainer">
+    <div class="topmenu">
       <span class="logotxt">Tortoiseshell Optics</span>
       <nav>
 */
 .cbanner {
   height: 31rem;
-  border: 1px solid blue;
+  /* DEBUG: border: 1px solid blue; */
   background-image: url("../images/glasses-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -45,28 +45,50 @@ section {
 
 .topmenu {
   display: flex;
-  color: dodgerblue;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: cadetblue;
   width: 100%;
-  border: 1px solid green;
+  height: 3rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  /* DEBUG: border: 1px solid green; */
 /*  margin: 1rem 0 0 0;*/
 }
 
-.logotxt {
-  border: 1px solid yellow;
+.topmenu span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0;
+  /* DEBUG: border: 1px solid black; */
 }
-/*
-.topmenu nav {
-  border: 2px solid maroon;
+
+.topmenu span img {
+  height: 1.5rem;
 }
 
 .logotxt {
-  color: purple;
-  border: 1px solid red;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  /* DEBUG: border: 1px solid yellow; */
 }
-.logotxt nav ul li {
-  display: inline;
-  padding: 5px;
+
+li {
+  display: inline-flex;
+  padding: 0 1rem;
 }
+
+nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  /* DEBUG: border: 1px solid brown; */
+}
+/*
+
 .callout  {
   display: block;
   position: absolute;
