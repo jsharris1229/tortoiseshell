@@ -1,9 +1,80 @@
 /* Stylesheet for Tortoiseshell Optics, a Codecademy project
    J Stuart Harris
+
+   See redline for details.
+   Background colors are: white, azure and cadetblue.
  */
 
 html,
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  color: black;
+  background-color: white;
 }
+
+:root {
+
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.sitecontainer {
+  width: 960px;
+}
+/*
+<section id="banner" class="cbanner">
+  <div class="topmenu">
+    <div class="sitecontainer">
+      <span class="logotxt">Tortoiseshell Optics</span>
+      <nav>
+*/
+.cbanner {
+  height: 31rem;
+  border: 1px solid blue;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topmenu {
+  display: flex;
+  color: dodgerblue;
+  width: 100%;
+  border: 1px solid green;
+/*  margin: 1rem 0 0 0;*/
+}
+
+.logotxt {
+  border: 1px solid yellow;
+}
+/*
+.topmenu nav {
+  border: 2px solid maroon;
+}
+
+.logotxt {
+  color: purple;
+  border: 1px solid red;
+}
+.logotxt nav ul li {
+  display: inline;
+  padding: 5px;
+}
+.callout  {
+  display: block;
+  position: absolute;
+  padding: 1.5rem 5rem;
+  height: 1rem;
+  width: 15rem;
+  top: 10rem;
+  left: 16rem;
+  background-color: gray;
+}
+*/
