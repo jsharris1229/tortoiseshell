@@ -81,6 +81,10 @@ nav {
   /* DEBUG: border: 1px solid brown; */
 }
 
+.navsmall {
+  display: none;
+}
+
 .relpos {
   position: relative;
 }
@@ -190,8 +194,18 @@ nav {
 /* ***** Responsive design code
     The default size is full browser size.
     Next is tablet size, at 1024px wide
-    Final is phone size, at 480px wide.
+    Final is phone size, at 768px wide.
  */
+ @media only screen and (min-width: 1025px) {
+   /* wide: #menubar div nav; narrow: #menubar div span */
+    /*body {
+      color: cyan;
+    }*/
+    .navsmall {
+      display: none;
+    }
+ }
+
 
  /* Tablet size, max width 1024px
   */
@@ -213,6 +227,10 @@ nav {
     margin-right: 2rem;
   }
 
+  .navsmall {
+    display: none;
+  }
+
   .callout  {
     padding: .75rem 4rem;
     top: 5rem;
@@ -222,6 +240,119 @@ nav {
 
   .callout span {
     font-size: 1.33rem;
+  }
+
+}
+
+/* Phone size, max width 768px
+ */
+
+@media only screen and (max-width: 768px) {
+  .cbanner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .sitecontainer {
+    width: 100%;
+  }
+
+  .topmenu {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .relpos {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav {
+    margin-right: 2rem;
+  }
+
+  .navsmall {
+    display: inline;
+  }
+
+  /* turn off unnecessary elements
+   */
+  .navlarge,
+  .footercontainer span {
+    display: none;
+  }
+  .topmenu span span {
+    display: none;
+  }
+  /*.callout  {
+    display: block;
+    position: absolute;
+    padding: 1.5rem 5rem;
+    top: 14rem;
+    right: -4rem;
+    background-color: white;
+  }
+*/
+  .callout {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    position: absolute;
+    top: 11rem;
+    right: initial;
+    left: 0;
+
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+
+  .callout span {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .cservices {
+    padding: 0;
+  }
+
+  .svccontainer {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+
+  .imgblock {
+    margin-top: 1.54rem;
+    justify-content: flex-start;
+  }
+
+  .imgblock img {
+    margin-bottom: 1rem;
+  }
+
+  .imgblock img[alt^="Exam"] {
+    margin-top: 0;
+  }
+
+  .infocontainer {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .infoblock p {
+    font-size: .77rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .footercontainer {
+    justify-content: center;
   }
 
 }
