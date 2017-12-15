@@ -13,10 +13,6 @@ body {
   background-color: white;
 }
 
-:root {
-
-}
-
 section {
   width: 100%;
   display: flex;
@@ -27,13 +23,9 @@ section {
 .sitecontainer {
   width: 960px;
 }
-/*
-<section id="banner" class="cbanner">
-  <div class="sitecontainer">
-    <div class="topmenu">
-      <span class="logotxt">Tortoiseshell Optics</span>
-      <nav>
-*/
+
+/* ***** Banner section
+ */
 .cbanner {
   height: 31rem;
   /* DEBUG: border: 1px solid blue; */
@@ -149,11 +141,12 @@ nav {
 .infoblock {
   display: flex;
   flex-flow: row wrap;
+  align-content: flex-start;
   width: 35%;
   margin: 0 2.5%; /* gives 5% between the two blocks */
 }
 
-.infoblock div {
+.infoheader {
   color: white;
   background-color: cadetblue;
   font-size: 1rem;
@@ -161,6 +154,7 @@ nav {
   padding: .5rem 1.25rem .5rem 1.25rem;
   margin: 0;
   width: 10rem;
+  height: 1rem;
   border: 1px solid yellow;
 }
 
