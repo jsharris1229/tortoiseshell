@@ -87,16 +87,88 @@ nav {
   justify-content: flex-end;
   /* DEBUG: border: 1px solid brown; */
 }
-/*
+
+.relpos {
+  position: relative;
+}
 
 .callout  {
   display: block;
   position: absolute;
   padding: 1.5rem 5rem;
-  height: 1rem;
-  width: 15rem;
-  top: 10rem;
-  left: 16rem;
-  background-color: gray;
+  top: 14rem;
+  right: -4rem;
+  background-color: white;
 }
-*/
+
+.callout span {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Services section
+ */
+.cservices {
+  padding: 3rem 0;
+}
+
+.svccontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  height: 8rem;
+  width: 5rem;
+  margin: 0 3rem;
+}
+
+.imgblock img {
+  max-width: 3.5rem;
+}
+
+.imgblock h3 {
+  text-align: center;
+}
+
+/* ***** Information section
+ */
+.infocontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.infoblock {
+  display: flex;
+  flex-flow: row wrap;
+  width: 35%;
+  margin: 0 2.5%; /* gives 5% between the two blocks */
+}
+
+.infoblock div {
+  color: white;
+  background-color: cadetblue;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .5rem 1.25rem .5rem 1.25rem;
+  margin: 0;
+  width: 10rem;
+  border: 1px solid yellow;
+}
+
+.infoblock p {
+  margin-top: 1rem;
+}
+/* ***** Add blank space at the end.
+ */
+.endspace {
+  height: 6rem;
+}
